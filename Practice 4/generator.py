@@ -69,4 +69,4 @@ myclass = MyNumbers1()
 myiter = iter(myclass)
 
 for x in myiter:
-  print(x
+  print(x)

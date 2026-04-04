@@ -1,6 +1,7 @@
 import os
 import sys
 from pathlib import Path
+import shutil
 
 # Determine base directory: first argument if provided and not starting with '-'
 if len(sys.argv) > 1 and not sys.argv[1].startswith('-'):

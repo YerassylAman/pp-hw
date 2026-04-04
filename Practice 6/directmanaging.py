@@ -27,8 +27,6 @@ for name in dir_names:
         print(f"Failed to create {target}: {e}")
 
 
-from pathlib import Path
-
 if len(sys.argv) < 3:
     print("Usage: python move_files.py source_dir dest_dir [extensions...]")
     sys.exit(1)

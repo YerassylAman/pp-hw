@@ -14,8 +14,8 @@ hand_r      = pygame.image.load(os.path.join(base, 'hand_right_centered.png')).c
 
 resized_image = pygame.transform.scale(image_surface, (800, 600))
 res_mickey    = pygame.transform.scale(mickey, (350, 350))
-hand_l_base   = pygame.transform.scale(hand_l, (80, 80))   
-hand_r_base   = pygame.transform.scale(hand_r, (100, 100)) 
+hand_l_base   = pygame.transform.scale(hand_l, (80, 150))   
+hand_r_base   = pygame.transform.scale(hand_r, (50, 200)) 
 
 clockc = (300, 170)
 

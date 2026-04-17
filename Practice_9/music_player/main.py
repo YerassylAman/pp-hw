@@ -4,9 +4,9 @@ import os
 pygame.init()
 pygame.mixer.init()
 
-music_folder = r'C:\Users\User\work\practice9\music_player\music'
+music_folder = r'C:\Users\amang\OneDrive\Рабочий стол\pp hw\Practice_9\music_player\music'
 songs = [os.path.join(music_folder, f) for f in os.listdir(music_folder) 
-         if f.endswith(('.mp3', '.wav'))]
+        if f.endswith(('.mp3', '.wav'))]
 
 if not songs:
     print("No .mp3 or .wav files found in", music_folder)

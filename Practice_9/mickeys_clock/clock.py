@@ -46,7 +46,6 @@ while not done:
     minutes_rect = rotated_minutes.get_rect(center=(600, 340))
     hours_rect   = rotated_hours.get_rect(center=(600,340))
 
-    # Draw everything
     screen.fill(WHITE)
 
     image_rect = resized_image.get_rect()

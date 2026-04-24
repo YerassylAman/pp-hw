@@ -9,17 +9,17 @@ HEIGHT = 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT)) # creating a game window
 # set_mode() takes a tuple as an argument
 
-image_background = pygame.image.load('resources/AnimatedStreet.png')
-image_player = pygame.image.load('resources/Player.png')
-image_enemy = pygame.image.load('resources/Enemy.png')
-coin_image = pygame.image.load('resources/dollar.png').convert_alpha()
+image_background = pygame.image.load(r'C:\Users\amang\OneDrive\Рабочий стол\pp hw\Practice_10\racer\resources\AnimatedStreet.png')
+image_player = pygame.image.load(r'C:\Users\amang\OneDrive\Рабочий стол\pp hw\Practice_10\racer\resources\Player.png')
+image_enemy = pygame.image.load(r'C:\Users\amang\OneDrive\Рабочий стол\pp hw\Practice_10\racer\resources\Enemy.png')
+coin_image = pygame.image.load(r'C:\Users\amang\OneDrive\Рабочий стол\pp hw\Practice_10\racer\resources\dollar.png').convert_alpha()
 
 collected = 0
 
-pygame.mixer.music.load('resources/background.wav')
+pygame.mixer.music.load(r'C:\Users\amang\OneDrive\Рабочий стол\pp hw\Practice_10\racer\resources\background.wav')
 pygame.mixer.music.play(-1)
 
-sound_crash = pygame.mixer.Sound('resources/crash.wav')
+sound_crash = pygame.mixer.Sound(r'C:\Users\amang\OneDrive\Рабочий стол\pp hw\Practice_10\racer\resources\crash.wav')
 
 font = pygame.font.SysFont("Verdana", 60)
 fontt = pygame.font.SysFont("Verdana", 20)

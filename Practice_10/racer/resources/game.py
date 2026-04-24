@@ -2,7 +2,7 @@
 import pygame, sys
 from pygame.locals import *
 import random, time
-
+import os
 #Initialzing 
 pygame.init()
 
@@ -28,7 +28,7 @@ font = pygame.font.SysFont("Verdana", 60)
 font_small = pygame.font.SysFont("Verdana", 20)
 game_over = font.render("Game Over", True, BLACK)
 
-background = pygame.image.load("AnimatedStreet.png")
+background = pygame.image.load(r'C:\Users\amang\OneDrive\Рабочий стол\pp hw\Practice_10\racer\resources\AnimatedStreet.png')
 
 #Create a white screen 
 DISPLAYSURF = pygame.display.set_mode((400,600))
@@ -39,7 +39,7 @@ pygame.display.set_caption("Game")
 class Enemy(pygame.sprite.Sprite):
       def __init__(self):
         super().__init__() 
-        self.image = pygame.image.load("Enemy.png")
+        self.image = pygame.image.load(r'C:\Users\amang\OneDrive\Рабочий стол\pp hw\Practice_10\racer\resources\Enemy.png')
         self.rect = self.image.get_rect()
         self.rect.center = (random.randint(40,SCREEN_WIDTH-40), 0)
 
@@ -55,7 +55,7 @@ class Enemy(pygame.sprite.Sprite):
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__() 
-        self.image = pygame.image.load("Player.png")
+        self.image = pygame.image.load(r'C:\Users\amang\OneDrive\Рабочий стол\pp hw\Practice_10\racer\resources\Player.png')
         self.rect = self.image.get_rect()
         self.rect.center = (160, 520)
        
@@ -109,7 +109,7 @@ while True:
 
     #To be run if collision occurs between Player and Enemy
     if pygame.sprite.spritecollideany(P1, enemies):
-          pygame.mixer.Sound('crash.wav').play()
+          pygame.mixer.Sound(r'C:\Users\amang\OneDrive\Рабочий стол\pp hw\Practice_10\racer\resources\crash.wav').play()
           time.sleep(1)
                    
           DISPLAYSURF.fill(RED)

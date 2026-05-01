@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Era",
+        "email": "123",
+        "birthday": "1212-12-12",
+        "phones": [
+            {
+                "phone": "+7471209082",
+                "type": "mobile"
+            }
+        ]
+    }
+]
